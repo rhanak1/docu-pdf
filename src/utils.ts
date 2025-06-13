@@ -148,6 +148,7 @@ export async function generatePDF({
     headerTemplate,
     footerTemplate,
     timeout: 0,
+    outline: true,
   });
 }
 
