@@ -41,7 +41,7 @@ export async function generatePDF({
   footerTemplate,
 }: generatePDFOptions): Promise<void> {
   let browser = await puppeteer.launch({
-    args: [],
+    args: ['--no-sandbox'],
     protocolTimeout: 300000,
     // defaultViewport: null, // useful when testing with headless: false
     // headless: false,
